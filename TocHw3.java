@@ -1,4 +1,3 @@
-
 // Author : 黃文志 F74006268
 
 import org.json.*;
@@ -31,15 +30,15 @@ public class TocHw3 {
 		for(int i=0;i<data.length();i++){
 			JSONObject item = data.getJSONObject(i);
 
-			if( item.getString("�m������").equals(args[1]) ){
-				if(item.getString("�g�a�Ϭq���m�Ϋت��Ϫ��P").contains(args[2]) ){
-					if( (item.getInt("�����~��")/100) >= Integer.parseInt(args[3]) ){
-						sum += item.getInt("�`����");
+			if( item.getString("鄉鎮市區").equals(args[1]) ){
+				if(item.getString("土地區段位置或建物區門牌").contains(args[2]) ){
+					if( (item.getInt("交易年月")/100) >= Integer.parseInt(args[3]) ){
+						sum += item.getInt("總價元");
 						num+=1;
-					//	System.out.println( item.getInt("�`����") );	
+					//	System.out.println( item.getInt("總價元") );	
 					}
 				}
-			}	
+			}
 		}
 		if(num==0)
 			System.out.println("NO result");
