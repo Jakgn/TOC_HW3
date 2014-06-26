@@ -1,3 +1,6 @@
+
+// Author : é»ƒæ–‡å¿— F74006268
+
 import org.json.*;
 import java.io.*;
 import java.net.*;
@@ -28,12 +31,12 @@ public class TocHw3 {
 		for(int i=0;i<data.length();i++){
 			JSONObject item = data.getJSONObject(i);
 
-			if( item.getString("¶mÂí¥«°Ï").equals(args[1]) ){
-				if(item.getString("¤g¦a°Ï¬q¦ì¸m©Î«Øª«°ÏªùµP").contains(args[2]) ){
-					if( (item.getInt("¥æ©ö¦~¤ë")/100) >= Integer.parseInt(args[3]) ){
-						sum += item.getInt("Á`»ù¤¸");
+			if( item.getString("ï¿½mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½").equals(args[1]) ){
+				if(item.getString("ï¿½gï¿½aï¿½Ï¬qï¿½ï¿½ï¿½mï¿½Î«Øªï¿½ï¿½Ïªï¿½ï¿½P").contains(args[2]) ){
+					if( (item.getInt("ï¿½ï¿½ï¿½ï¿½ï¿½~ï¿½ï¿½")/100) >= Integer.parseInt(args[3]) ){
+						sum += item.getInt("ï¿½`ï¿½ï¿½ï¿½ï¿½");
 						num+=1;
-					//	System.out.println( item.getInt("Á`»ù¤¸") );	
+					//	System.out.println( item.getInt("ï¿½`ï¿½ï¿½ï¿½ï¿½") );	
 					}
 				}
 			}	
