@@ -1,4 +1,5 @@
-// Author : 黃文志 F74006268
+// Author       : 黃文志 F74006268
+// Description  : parse json about house data and some calculation to finish HW3
 
 import org.json.*;
 import java.io.*;
